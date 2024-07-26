@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="/assets/caneta-tinteiro-de-perto.png" type="image/x-icon">
+    <title>Decoficador</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main class="criptador">
+        <img src="assets/caneta-tinteiro-de-perto.png" class="criptador-conteudo-img">
+        <section class="criptador-conteudo">
+            <textarea class="criptador-conteudo-texto" placeholder="Digite seu texto"></textarea>
+            <div class="criptador-conteudo-atencao">
+                <img src="/assets/exclamacao.png" class="exclamacao-img">
+                <p class="criptador-conteudo-p">Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="criptador-conteudo-botao">
+                <button onclick="encriptar()" class="criptador-conteudo-botao1">Criptografar</button>
+                <button onclick="decriptar()" class="criptador-conteudo-botao2">Descriptografar</button>
+            </div>
+        </section>
+
+        <div class="criptador-saida">
+            <div class="criptador-saida-display">
+                <img src="assets/image-from-rawpixel-id-6288393-png.png">
+                <p class="criptador-saida-display-ts"><strong>Nenhuma mensagem encontrada</strong></p>
+                <p class="criptador-saida-display-t"> Digite um texto que você deseja encriptar ou descriptografar</p>
+            </div>
+            <div class="criptador-saida-final" style="display: none">
+                <textarea class="criptador-saida-final-resultado" style="display: none;"></textarea>
+                <button onclick="copiar()" class="criptador-saida-final-copiarbtn">Copiar</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-texto">Desenvolvido por Mariana Felipe</p>
+    </footer>
+</body>
+</html>
+
+
+

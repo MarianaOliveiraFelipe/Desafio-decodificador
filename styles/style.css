@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-segundaria:#ffffff;
+    --cor-terciaria: #2b2d42;
+    --cor-hover: #45486e;
+
+    --fonte-primaria: "Special Elite", system-ui;
+    --fonte-segundaria: "Roboto Mono", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("/assets/fundo-de-papel-de-espaco-de-design-texturizado.jpg");
+    background-size: cover;
+}
+
+.criptador-conteudo-img {
+    position: absolute;
+    top: 1px;
+    left: 10%; 
+    max-width: 70px;
+    height: auto;
+}
+
+.criptador {
+    padding-top: 1%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.criptador-conteudo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.criptador-conteudo-texto {
+    padding-top: 10%;
+    width: 100%;
+    height: 420px; 
+    font-size: 2rem;
+    box-sizing: border-box; 
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.criptador-conteudo-atencao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.criptador-conteudo-p {
+    font-family: var(--fonte-segundaria);
+    margin-right: 335px;
+    margin-top: 50px;
+    
+}
+
+.exclamacao-img{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0px;
+}
+
+.criptador-conteudo-botao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+}
+
+.criptador-conteudo-botao1, .criptador-conteudo-botao2 {
+    border-radius: 25px;
+    gap: 10px;
+    width: 330px;
+    height: 56px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-segundaria);
+    font-family: var(--fonte-segundaria);
+    border: 2px solid;
+    border-color: #2b2d42;
+}
+
+.criptador-conteudo-botao1:hover, .criptador-conteudo-botao2:hover, .criptador-saida-final-copiarbtn:hover {
+    background-color: var(--cor-hover);
+    border-color: var(--cor-hover);
+}
+
+.criptador-saida {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    padding-right: 1%;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.criptador-saida-display {
+    display: inline-block;
+    height: 600px;
+    width: 370px;
+    background-color: var(--cor-segundaria);
+    border-radius: 15px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative; 
+}
+
+.criptador-saida-display-ts {
+    font-family: var(--fonte-segundaria);
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+}
+
+.criptador-saida-display-t {
+    font-family: var(--fonte-segundaria);
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.display-text {
+    display: block;
+    font-family: var(--fonte-segundaria);
+    font-size: 1.25rem;
+}
+
+.criptador-saida-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 600px;
+    width: 370px;
+    background-color: var(--cor-segundaria);
+    border-radius: 15px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative; 
+    
+}
+
+.criptador-saida-final-resultado {
+    font-family: var(--fonte-segundaria);
+    font-size: 1.25rem;
+    margin: 10px;
+    height: 85%;
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 1%;
+}
+
+.criptador-saida-final-copiarbtn {
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    gap: 10px;
+    width: 330px;
+    height: 56px;
+    padding: 5px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-segundaria);
+    font-family: var(--fonte-segundaria);
+    display: none;
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.rodape {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    text-align: center;
+}
+
+.rodape-texto {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quaternaria);
+    font-size: 1.25rem;
+}
